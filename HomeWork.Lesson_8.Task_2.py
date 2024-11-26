@@ -3,10 +3,18 @@
 # Выведите N чисел - измененный массив.
 
 number = int(input()) # Ввод числа N
+res = []
 if 1 <= number <= 100000:
     arr = list(map(int, input().split()))
-    if (len(arr) == number):
-        print(a)
 else:
-    print("Не верное значение!")
-    
+    "Число вне диапазона!"
+for i in range(len(arr)):
+    if 1 <= arr[i] <= (10**9):
+        res.append(arr[i])
+    print(res)
+    else:
+        print("Не верное значение")    
+   # if a <= arr:
+       # print(arr)
+#else:
+    #print("Не верное значение!")
